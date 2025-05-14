@@ -37,11 +37,12 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set Tru
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002031329869') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002409869914') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request File With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002031329869')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002409869914')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002447923581')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
@@ -89,7 +90,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'publicchannel0077') # 
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviebazaar7')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/thala_for')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movie_bazaar07')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviesbazaarsupp') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Searching7_filebot')
 
@@ -98,7 +99,7 @@ AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 BUTTON_MODE = bool(environ.get('BUTTON_MODE', True))
 MAX_BTN = bool(environ.get('MAX_BTN', True))
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 IMDB = bool(environ.get('IMDB', True))
 AUTO_FFILTER = bool(environ.get('AUTO_FFILTER', True))
 AUTO_DELETE = bool(environ.get('AUTO_DELETE', True))
@@ -125,7 +126,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxlinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '5f1f147761b7ab694e1c2d26dfe05adf088536c2')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/how_to_downlod_7/12') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
